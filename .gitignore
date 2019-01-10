@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+input.txt
+output0.txt
+output1.txt
+norm_path
+randompath
+
