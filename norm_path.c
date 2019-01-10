@@ -60,7 +60,8 @@ char* norm_path(char* output, const char* input)
 
 	if (isroot && output[eolp] != '/')
 		output[eolp--] = '/';
-	else if (!isroot && skip > 0)
+	/*
+    else if (!isroot && skip > 0)
 	{
 		while (skip > 0)
 		{
@@ -70,6 +71,11 @@ char* norm_path(char* output, const char* input)
 			skip--;
 		}
 	}
+
+    // ../../abc = ../../abc
+    // OR
+    // ../../abc = abc
+    */
 
 	return output + eolp + 1;
 }
